@@ -24,6 +24,10 @@ commands := commands.value.filterNot { command =>
 ThisBuild / resolvers += Resolver.ApacheMavenSnapshotsRepo
 ThisBuild / reproducibleBuildsCheckResolver := Resolver.ApacheMavenStagingRepo
 
+ThisBuild / javafmt / excludeFilter := (javafmt / excludeFilter).value || new SimpleFileFilter(
+  _.getCanonicalPath.contains(s"${java.io.File.separator}jdoc${java.io.File.separator}")
+)
+
 inThisBuild(Def.settings(
   Global / onLoad := {
     sLog.value.info(
