@@ -21,7 +21,6 @@ object Dependencies {
   val pekkoHttpBinaryVersion = PekkoHttpDependency.default.link
 
   val scalaTestVersion = "3.2.19"
-  val scalaTestPlusJUnitVersion = scalaTestVersion + ".0"
 
   val awsSdkVersion = "1.12.797"
   val guavaVersion = "33.5.0-jre"
@@ -94,13 +93,11 @@ object Dependencies {
     "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test,
     "org.apache.pekko" %% "pekko-cluster" % pekkoVersion % Test,
     "org.apache.pekko" %% "pekko-http-testkit" % pekkoHttpVersion % Test,
-    "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
-    "org.scalatestplus" %% "junit-4-13" % scalaTestPlusJUnitVersion % Test)
+    "org.scalatest" %% "scalatest" % scalaTestVersion % Test)
 
   val managementPki = Seq(
     "org.apache.pekko" %% "pekko-pki" % pekkoVersion,
-    "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
-    "org.scalatestplus" %% "junit-4-13" % scalaTestPlusJUnitVersion % Test)
+    "org.scalatest" %% "scalatest" % scalaTestVersion % Test)
 
   val managementLoglevelsLogback = Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
@@ -137,8 +134,7 @@ object Dependencies {
     "org.mockito" % "mockito-core" % "5.23.0" % Test,
     "org.apache.pekko" %% "pekko-http-testkit" % pekkoHttpVersion % Test,
     "org.apache.pekko" %% "pekko-distributed-data" % pekkoVersion % Test,
-    "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
-    "org.scalatestplus" %% "junit-4-13" % scalaTestPlusJUnitVersion % Test)
+    "org.scalatest" %% "scalatest" % scalaTestVersion % Test)
 
   val managementClusterBootstrap = Seq(
     "org.apache.pekko" %% "pekko-discovery" % pekkoVersion,
@@ -148,8 +144,7 @@ object Dependencies {
     "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test,
     "org.apache.pekko" %% "pekko-http-testkit" % pekkoHttpVersion % Test,
     "org.apache.pekko" %% "pekko-distributed-data" % pekkoVersion % Test,
-    "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
-    "org.scalatestplus" %% "junit-4-13" % scalaTestPlusJUnitVersion % Test)
+    "org.scalatest" %% "scalatest" % scalaTestVersion % Test)
 
   val leaseKubernetes = Seq(
     "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
@@ -159,7 +154,6 @@ object Dependencies {
     "org.apache.pekko" %% "pekko-slf4j" % pekkoVersion,
     "org.apache.pekko" %% "pekko-http-spray-json" % pekkoHttpVersion,
     "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
-    "org.scalatestplus" %% "junit-4-13" % scalaTestPlusJUnitVersion % Test,
     "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test) ++
     wireMockDependencies
 
