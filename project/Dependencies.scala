@@ -20,7 +20,7 @@ object Dependencies {
   val pekkoHttpVersion = PekkoHttpDependency.version
   val pekkoHttpBinaryVersion = PekkoHttpDependency.default.link
 
-  val scalaTestVersion = "3.2.19"
+  val scalaTestVersion = "3.2.20"
 
   val awsSdkVersion = "1.12.797"
   val guavaVersion = "33.5.0-jre"
