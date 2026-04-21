@@ -47,7 +47,7 @@ object Dependencies {
     "org.apache.pekko" %% "pekko-actor" % pekkoVersion,
     "org.apache.pekko" %% "pekko-discovery" % pekkoVersion,
     "org.kiwiproject" % "consul-client" % "1.12.0",
-    "org.testcontainers" % "testcontainers-consul" % "2.0.4" % Test,
+    "org.testcontainers" % "testcontainers-consul" % "2.0.5" % Test,
     "org.scalatest" %% "scalatest" % scalaTestVersion % Test,
     "org.apache.pekko" %% "pekko-testkit" % pekkoVersion % Test,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoVersion % Test,
